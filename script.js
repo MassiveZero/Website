@@ -1,15 +1,21 @@
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    document.getElementById('formMessage').textContent = 'Thanks! I\'ll get back to you soon.';
-    this.reset();
-});
+const form = document.getElementById('contactForm');
+const formMessage = document.getElementById('formMessage');
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
+form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
     });
+
+    if (res.ok) {
+        formMessage.textContent = "Thanks! I'll get back to you soon.";
+        form.reset();
+    } else {
+        formMessage.textContent = "Something went wrong. Please try again.";
+    }
 });
