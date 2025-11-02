@@ -174,7 +174,7 @@ h2 {
 
 .stat-label {
   color: var(--secondary);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .grid {
@@ -199,7 +199,7 @@ h2 {
 
 .card p {
   color: var(--secondary);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .pricing-box {
@@ -220,7 +220,7 @@ h2 {
 
 .price-note {
   color: var(--secondary);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .features-list {
@@ -266,7 +266,7 @@ label {
   margin-bottom: 0.4rem;
   color: var(--secondary-two);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 input, textarea, select {
@@ -274,7 +274,7 @@ input, textarea, select {
   padding: 0.8rem;
   border: 1px solid #d1d5db;
   border-radius: 6px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: inherit;
 }
 
@@ -311,7 +311,7 @@ footer {
   text-align: center;
   padding: 2rem;
   color: var(--secondary);
-  font-size: 0.9rem;
+  font-size:1rem;
   border-top: 1px solid var(--border);
 }
 
@@ -326,7 +326,7 @@ footer {
 nav .nav-button {
   color: var(--text);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -341,6 +341,6 @@ nav .nav-button {
   
   nav ul {
     gap: 1rem;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 }
