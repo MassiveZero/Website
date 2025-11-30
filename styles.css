@@ -91,6 +91,7 @@ nav a:hover {
 .hero-content {
   max-width: 700px;
   margin: 0 auto;
+  margin-top: 5%;
 }
 
 .credential {
@@ -343,4 +344,12 @@ nav .nav-button {
     gap: 1rem;
     font-size: 0.9rem;
   }
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: transform 0.25s ease;
 }
